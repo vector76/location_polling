@@ -1,0 +1,13 @@
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">{{ _('Polling Interval') }}</label>
+        <div class="controls">
+            <input type="number" step="any" class="input-mini text-right" data-bind="value: settings.plugins.location_polling.poll_interval">
+            <span class="help-inline">{{ _('(seconds) delay betewen M114 queries') }}</span>
+        </div>
+        <div class="controls">
+            <input type="checkbox" data-bind="checked: settings.plugins.location_polling.enable">
+            <span class="help-inline">{{ _('Enable M114 queries') }}</span>
+        </div>
+    </div>    
+</form>
